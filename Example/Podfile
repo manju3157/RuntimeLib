@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RuntimeLib_Example' do
+  pod 'RuntimeLib', :path => '../'
+
+  target 'RuntimeLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
