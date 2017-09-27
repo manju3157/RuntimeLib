@@ -1,0 +1,38 @@
+{
+  "name": "RuntimeLib",
+  "version": "0.1.0",
+  "summary": "My First SDK Library. RuntimeLib.",
+  "description": "My First Runtime SDK to take mobile surveys",
+  "homepage": "https://github.com/manju3157/RuntimeLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "manjunath.ramesh@onepointglobal.com": "manjunath.ramesh@onepointglobal.com"
+  },
+  "source": {
+    "git": "https://github.com/manju3157/RuntimeLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "include/OnePoint.Runtime/*.h",
+  "ios": {
+    "vendored_libraries": "libOnePoint.Runtime.a"
+  },
+  "preserve_paths": "libOnePoint.Runtime.a",
+  "public_header_files": "include/OnePoint.Runtime/*.h",
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "/usr/include/libxml2",
+    "OTHER_LDFLAGS": "-lxml2 -lz -ObjC",
+    "LIBRARY_SEARCH_PATHS": "$(PODS_ROOT)/Pods/**"
+  },
+  "libraries": [
+    "xml2",
+    "c++",
+    "iconv",
+    "z"
+  ]
+}

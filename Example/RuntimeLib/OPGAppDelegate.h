@@ -7,9 +7,17 @@
 //
 
 @import UIKit;
+#import "Access.h"
+#import "IosRuntimeInteractor.h"
+#import "WebPlayer.h"
+#import "Controller.h"
+#import "WebSession.h"
+#import "InterviewSession.h"
 
-@interface OPGAppDelegate : UIResponder <UIApplicationDelegate>
+
+@interface OPGAppDelegate : UIResponder <UIApplicationDelegate, IosRuntimeInteractor>
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end

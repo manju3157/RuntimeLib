@@ -1,0 +1,6 @@
+framework module RuntimeLib {
+  umbrella header "RuntimeLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
